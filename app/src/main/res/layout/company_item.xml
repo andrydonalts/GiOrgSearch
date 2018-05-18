@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:src="@mipmap/ic_launcher"
+        android:id="@+id/company_item_thumb" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="FACEBOOK"
+        app:layout_constraintTop_toTopOf="@id/company_item_thumb"
+        app:layout_constraintLeft_toRightOf="@id/company_item_thumb"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:id="@+id/company_item_title"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="location"
+        app:layout_constraintTop_toBottomOf="@id/company_item_title"
+        app:layout_constraintLeft_toRightOf="@id/company_item_thumb"
+        app:layout_constraintBottom_toTopOf="@id/company_item_site"
+        android:layout_marginStart="16dp"
+        android:id="@+id/company_item_location"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="google.com"
+        app:layout_constraintLeft_toRightOf="@id/company_item_thumb"
+        app:layout_constraintBottom_toBottomOf="@id/company_item_thumb"
+        android:layout_marginStart="16dp"
+        android:textColor="#6b98b7"
+        android:id="@+id/company_item_site"/>
+
+</android.support.constraint.ConstraintLayout>

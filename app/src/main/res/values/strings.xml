@@ -1,0 +1,10 @@
+<resources>
+    <!--<string name="app_name">GitCompanySearch</string>-->
+    <string name="app_name">Git Client</string>
+    <string name="message_exception_limit">GitHub request limit is exhausted. Try again later.</string>
+    <string name="message_exception_no_internet">No internet connection.</string>
+    <plurals name="toolbar_title_format">
+        <item quantity="one">%1$s Repository (%2$d)</item>
+        <item quantity="other">%1$s Repositories (%2$d)</item>
+    </plurals>
+</resources>
